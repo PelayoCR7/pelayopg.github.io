@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operadores Binarios</title>
+</head>
+<body>
+    <h1>Operadores Binarios</h1>
+    <script>
+        var A = prompt("Introduce el valor de A");
+        var B = prompt("Introduce el valor de B");
+
+        var numeroA = parseFloat(A);
+        var numeroB = parseFloat(B);
+
+        var multiplica = numeroA * numeroB;
+        var divide = numeroA / numeroB;
+        var suma = numeroA + numeroB;
+        var resta = numeroA - numeroB;
+
+        document.write("<p>El resultado de dividir " + numeroA + " entre " + numeroB + " es " + divide + "</p>");
+        document.write("<p>El resultado de multiplicar " + numeroA + " por " + numeroB + " es " + multiplica + "</p>");
+        document.write("<p>El resultado de sumar " + numeroA + " y " + numeroB + " es " + suma + "</p>");
+        document.write("<p>El resultado de restar " + numeroB + " a " + numeroA + " es " + resta + "</p>");
+        document.write("<p>El resultado de evaluar si " + numeroA + " y " + numeroB + " son iguales es: " + (numeroA == numeroB) + "</p>");
+        document.write("<p>El resultado de evaluar si " + numeroA + " y " + numeroB + " son diferentes es: " + (numeroA != numeroB) + "</p>");
+        document.write("<p>El resultado de evaluar si " + numeroA + " es menor que " + numeroB + " es: " + (numeroA < numeroB) + "</p>");
+        document.write("<p>El resultado de evaluar si " + numeroA + " es mayor que " + numeroB + " es: " + (numeroA > numeroB) + "</p>");
+    </script>
+</body>
+</html>
