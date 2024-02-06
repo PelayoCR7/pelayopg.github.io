@@ -1,0 +1,83 @@
+<!DOCTYPE html>   
+
+<html>  
+
+<head>   
+
+<title>Javascript</title>  
+<script>
+    let jugar=prompt("Este programa funciona tomando decisiones, ¿quieres jugar? Responde con una s minúscula si es que sí o con una n mayúscula si es que no")
+
+
+    if(jugar==`s`) 
+
+    { 
+
+    var fruta=prompt("introduce el nombre de una fruta que desees con la primera letra en mayúscula");  }
+
+
+    switch (fruta) { 
+      case 'Naranjas': 
+        alert('El kilogramo de naranjas cuesta $0.59.'); 
+        break; 
+      case 'Manzanas': 
+        alert('El kilogramo de manzanas cuesta $0.32.'); 
+        break; 
+      case 'Platanos': 
+        alert('El kilogramo de platanos cuesta $0.48.'); 
+        break; 
+      case 'Cerezas': 
+        alert('El kilogramo de cerezas cuesta $3.00.'); 
+        break; 
+      case 'Mangos': 
+      case 'Papayas': 
+        alert('El kilogramo de mangos y papayas cuesta $2.79.'); 
+        break; 
+      default: 
+        alert('Lo lamentamos, por el momento no disponemos de ' + fruta + '.'); 
+    } 
+
+    var respuesta=prompt("¿Hay algo más que te quisiera consultar?, responde si o no"); 
+
+
+
+    if(respuesta=="si") 
+    
+    { 
+
+    alert("No tenemos tiempo para responderte en este momento. Gracias"); 
+    }
+    
+
+    if(respuesta=="no") 
+
+    {
+
+    alert("muchas gracias por tu consulta"); 
+
+    } 
+
+    
+
+    else 
+
+    { 
+
+     alert("es una pena que no quieras participar. Quizás para la siguiente");
+
+    } 
+  </script>
+</head>   
+
+  <body>  
+
+<h1>Estructuras condicionales</h1>  
+  <p>Lo que se hace en este ejercicio es un script en el que se pregunta al usuario si quiere jugar a un juego, si responde que sí entonces se le preguntará por una fruta. Debido a que hay muchas frutas, se han escogido las más populares, por lo que se ha hecho un código esperando que el usuario diga una de esas frutas, sino se responderá que no hay de esa clase de fruta por el momento. Al decir una fruta, se dirá el precio de cada una. 
+Ya después de eso, se le preguntará al usuario si quiere algo más, si dice que sí ,con el if, se le dirá un alert de que no hay tiempo y si dice que no pues se le agradecerá su consulta. 
+  Por último hay un else que está encadenado al primer if de que si quería jugar a un juego, gracias este else si el usuario dice que no pues s ele dirá que es una pena que no quiera jugar.</p>
+
+
+        </body>
+  
+
+</html>  
