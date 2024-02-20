@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejecutar programa JavaScript al hacer clic en un botón</title>
+</head>
+
+<body>
+
+<button id="miBoton" onclick="ejecutarPrograma()">Haz clic para ejecutar el programa</button>
+
+<script>
+function ejecutarPrograma() {
+  let frase = prompt("Escribe una frase:");
+  let frase_nueva = "";
+
+  for (let cr7 of frase) {
+    if (cr7 == 'a') {
+      frase_nueva += 'u';
+      document.write("Reemplazando 'a' por 'u'<br>");
+    } else {
+      frase_nueva += cr7;
+    }
+  }
+
+  document.write("<h1>" + frase_nueva + "</h1>");
+}
+</script>
+</body>
+
+</html>
