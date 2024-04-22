@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejemplo uso de formularios y botones</title>
+
+    <script>
+
+        // Código de JavaScript que queremos que se ejecute cuando apretemos el botón que aparecerá en la página
+
+        function cr7() {
+
+            // Esta función va a obtener un valor cualquiera del campo de formulario al que le hayamos asignado un ID, en nuestro caso el ID será "Pelayo"
+
+            const valor = parseFloat(document.getElementById("Pelayo").value);
+
+
+
+            // Hemos guardado el valor del campo que queremos en la variable anterior. Ahora vamos a realizar alguna acción con él para que veas cómo funciona.
+
+            alert("El valor introducido es: " + valorIntroducido + ". El tipo de dato es: " + typeof(v));
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+
+        <label for="Pelayo">Introduce algún valor:</label>
+
+        <input type="text" id="Pelayo" name="Pelayo">
+
+        <button type="button" onclick="cr7()">ENVIAR</button>
+
+    </form>
+
+
+
+    <p> Como veréis si introducís un dato numérico, la función typof os dice que es un string, es decir una cadena de caracteres, por lo que tendréis que convertir en entero o en floar para poder trabajar numéricamente con estos valores. Esto ya lo hemos visto en prácticas anteriores </p>
+
+</body>
+
+</html>
